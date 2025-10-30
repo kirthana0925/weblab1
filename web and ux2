@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirthana.K | BCA Student Profile</title>
+<style>
+    /* ========== RESET & BASE ========== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        color: #fff;
+        background: #0f051e;
+        position: relative;
+    }
+
+    /* Canvas background for gradient waves */
+    canvas#bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+        text-align: center;
+        padding: 80px 20px 60px;
+        position: relative;
+    }
+
+    header img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 5px solid rgba(255,255,255,0.6);
+        box-shadow: 0 0 25px rgba(208,189,244,0.7);
+        animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    header h1 {
+        margin-top: 20px;
+        font-size: 3em;
+        background: linear-gradient(90deg, #d0bdf4, #8458B3, #a28089);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 20px rgba(208,189,244,0.3);
+    }
+
+    header p {
+        margin-top: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #eee;
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+    .highlight {
+        color: #d0bdf4;
+        font-weight: 600;
+    }
+
+    /* ========== MAIN CONTENT ========== */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 60px 20px;
+    }
+
+    .box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        padding: 25px;
+        width: 340px;
+        color: #fff;
+        box-shadow: 0 0 25px rgba(132,88,179,0.25);
+        border: 1px solid rgba(208,189,244,0.3);
+        transform: perspective(800px) rotateY(0deg);
+        transition: transform 0.6s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+        transform: perspective(800px) rotateY(5deg) translateY(-10px);
+        box-shadow: 0 0 35px rgba(208,189,244,0.6);
+    }
+
+    .box h2 {
+        color: #d0bdf4;
+        font-size: 1.6em;
+        border-bottom: 2px solid rgba(208,189,244,0.4);
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+    }
+
+    .box ul {
+        list-style: square;
+        padding-left: 20px;
+    }
+
+    .box ul li {
+        margin-bottom: 8px;
+        color: #e0def4;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: #d0bdf4;
+        font-weight: 600;
+        margin-right: 15px;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: #fff;
+        text-shadow: 0 0 10px #d0bdf4;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: #d0bdf4;
+        font-size: 0.9em;
+        border-top: 1px solid rgba(208,189,244,0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    footer span {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<header>
+    <img src="c:\Users\HP\Documents\WhatsApp Image 2025-10-29 at 19.42.44_805a2cbd.jpg" alt="Profile Picture">
+    <h1>Kirthana.K</h1>
+    <p>
+        I'm a <span class="highlight">BCA (Hons.) 1st-year</span> student at <span class="highlight">RV University</span> with a passion for coding in <strong>Java</strong> and <strong>Python</strong>. 
+        My journey in computer science is focused on building strong technical foundations, creative problem-solving, and gaining real-world exposure through internships and projects.
+    </p>
+</header>
+
+<main>
+    <div class="box">
+        <h2>About Me</h2>
+        <p>
+            As a student in the BCA (Hons.) program, I’m learning the foundations of computer science, including algorithmic thinking, software development, and data interpretation. 
+            I’m passionate about exploring how technology can create innovative solutions for real-world problems.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Competitive coding in Java & Python</li>
+            <li>Exploring AI and data science concepts</li>
+            <li>Designing creative web interfaces</li>
+            <li>Reading tech blogs & research articles</li>
+            <li>Participating in hackathons</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Social Links</h2>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> kirthana.k@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Location:</strong> Bengaluru, India</p>
+    </div>
+
+    <div class="box">
+        <h2>Programming Focus</h2>
+        <p>
+            I’m focused on mastering <strong>Java</strong> and <strong>Python</strong>, developing efficient algorithms, and contributing to open-source projects.
+            The BCA program at RV University gives me hands-on exposure through projects, professional electives, and paid internships starting in the second year.
+        </p>
+    </div>
+</main>
+
+<footer>
+    © 2025 <span>Kirthana.K</span> | Designed with ❄️ love, logic & a touch of elegance
+</footer>
+
+<script>
+/* ======== CANVAS ANIMATED GRADIENT WAVES ======== */
+const canvas = document.getElementById("bg");
+const ctx = canvas.getContext("2d");
+let w, h, t = 0;
+
+function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resize);
+resize();
+
+function draw() {
+    ctx.clearRect(0, 0, w, h);
+    t += 0.015;
+
+    for (let i = 0; i < 3; i++) {
+        ctx.beginPath();
+        const grad = ctx.createLinearGradient(0, 0, w, h);
+        grad.addColorStop(0, `hsla(${200 + i * 40}, 70%, 70%, 0.3)`);
+        grad.addColorStop(1, `hsla(${300 + i * 30}, 70%, 50%, 0.2)`);
+        ctx.fillStyle = grad;
+
+        const amplitude = 40 + i * 25;
+        const offset = i * 50;
+        ctx.moveTo(0, h / 2);
+
+        for (let x = 0; x < w; x += 10) {
+            const y = h / 2 + Math.sin(x * 0.008 + t + offset) * amplitude;
+            ctx.lineTo(x, y);
+        }
+
+        ctx.lineTo(w, h);
+        ctx.lineTo(0, h);
+        ctx.closePath();
+        ctx.fill();
+
+        // Add glowing highlight
+        ctx.shadowBlur = 25;
+        ctx.shadowColor = `hsla(${250 + i * 30}, 80%, 70%, 0.7)`;
+        ctx.fill();
+    }
+
+    requestAnimationFrame(draw);
+}
+
+draw();
+</script>
+
+</body>
+</html>
